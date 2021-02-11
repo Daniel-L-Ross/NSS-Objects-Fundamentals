@@ -57,44 +57,62 @@ const tenAlbum = {
 
 // Dot vs. Bracket Notation - accessing properties
 // TODO: USING DOT NOTATION, access the object properties (artist, title, released) and log the following message to the console using string interpolation: "Pearl Jam's Album Ten was released on 8/27/1991"
-console.log('Dot notation: ', `${tenAlbum.artist}'s Album ${tenAlbum.title} was released on ${tenAlbum.released}`)
-// TODO: Output the same messge to the console using BRACKET NOTATION
+// console.log('Dot notation: ', `${tenAlbum.artist}'s Album ${tenAlbum.title} was released on ${tenAlbum.released}`)
+// // TODO: Output the same messge to the console using BRACKET NOTATION
 
-console.log('Bracket notation: ', `${tenAlbum['artist']}'s Album ${tenAlbum['title']} was released on ${tenAlbum['released']}`)
+// console.log('Bracket notation: ', `${tenAlbum['artist']}'s Album ${tenAlbum['title']} was released on ${tenAlbum['released']}`)
 
-// Iterating Object keys/values
-// TODO: Iterate the tenAlbum object and log the key/value pairs to the console using a for/in loop
-// example: "title": "Ten"
+// // Iterating Object keys/values
+// // TODO: Iterate the tenAlbum object and log the key/value pairs to the console using a for/in loop
+// // example: "title": "Ten"
 
-for (const item in tenAlbum) {
-   console.log(`${item}: ${tenAlbum[item]}`)
-}
+// for (const item in tenAlbum) {
+//    console.log(`${item}: ${tenAlbum[item]}`)
+// }
 
-// Accessing iterable properties on objects
-// TODO: Iterate the tracks array and output the title of each song and its song length using a for loop of your choosing. The output should look something like this:
-/*
-    Title: Once - Length: 232
-    Title: Even Flow - Length: 293
-    etc.
-*/
+// // Accessing iterable properties on objects
+// // TODO: Iterate the tracks array and output the title of each song and its song length using a for loop of your choosing. The output should look something like this:
+// /*
+//     Title: Once - Length: 232
+//     Title: Even Flow - Length: 293
+//     etc.
+// */
 
-for (const track of tenAlbum.tracks) {
-    console.log(`Title: ${track.title} - Length: ${track.length}`)
-}
+// for (const track of tenAlbum.tracks) {
+//     console.log(`Title: ${track.title} - Length: ${track.length}`)
+// }
 
-// ! ADD AND COMMIT
+// // ! ADD AND COMMIT
 
 // OBJECT.keys() / .values() / .entries()
 // TODO: log the keys of the tenAlbum object using Object.keys()
+// console.log(Object.keys(tenAlbum))
 
 // TODO: log the values of the tenAlbum object Object.values()
+// console.log(Object.values(tenAlbum))
 
 // TODO: log the entries of the tenAlbum object Object.entries()
+console.log('Entries: ', Object.entries(tenAlbum))
+
 
 // TODO: iterate the tenAlbum object and log the key/value pairs to the console using each of the above Object methods:
 // .keys()
+for (const key of Object.keys(tenAlbum)) {
+    console.log(`${key}: ${tenAlbum[key]}`)     
+}
+
 // .values()
+// for (const iterator of object) {
+    
+// }
+
+
 // .entries()
+for (const array of Object.entries(tenAlbum)) {
+    console.log(`.entries iteration: ${array[0]}: ${array[1]}`)
+}
+
+
 
 // ! ADD AND COMMIT
 
